@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobias Elgaard Tagmos: Mit portefølje</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="intro">
+            <img src="img/tobias-portrait.jpg" alt="Billede af mig" class="profilbillede">
+            <h1>Velkommen, jeg hedder Tobias</h1>
+            <p>Jeg studerer i øjeblikket multimediedesign på IBA Erhvervsakademi i Kolding, </p>
+            <p> der aspirerer til at blive frontend-udvikler og på sigt at blive Fullstack developer.</p>
+        </div>
+    </header>
 
-    
+    <section class="projekter">
+        <div class="projekt-blok" onclick="openProject('project1')">
+            <h2>Projekt: TÆ:ND</h2>
+            <p>Beskrivelse af projekt 1</p>
+        </div>
+        <div class="projekt-blok" onclick="openProject('project2')">
+            <h2>Projekt: My Multimedia</h2>
+            <p>Beskrivelse af projekt 2</p>
+        </div>
+        <div class="projekt-blok" onclick="openProject('project3')">
+            <h2>Projekt: Road to CEO</h2>
+            <p>Beskrivelse af projekt 3</p>
+        </div>
+    </section>
+
     
 </body>
 </html>
