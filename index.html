@@ -1,36 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tobias Elgaard Tagmos: Mit portefølje</title>
     <link rel="stylesheet" href="scss/style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e9eeb44cb1.js" crossorigin="anonymous"></script>
+    <title>Portfolio Website</title>
 </head>
 <body>
-    <header>
-        <div class="intro">
-            <img src="img/tobias-portrait.jpg" alt="Billede af mig" class="profilbillede">
-            <h1>Velkommen, jeg hedder Tobias</h1>
-            <p>Jeg studerer i øjeblikket multimediedesign på IBA Erhvervsakademi i Kolding, </p>
-            <p> der aspirerer til at blive frontend-udvikler og på sigt at blive Fullstack developer.</p>
+<header>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <h1>Tobias E. Tagmos</h1>
         </div>
-    </header>
+        <div>
+          <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
 
-    <section class="projekter">
-        <div class="projekt-blok" onclick="openProject('project1')">
-            <h2>Projekt: TÆ:ND</h2>
-            <p>Beskrivelse af projekt 1</p>
+<main>
+    <section class="intro-section">
+        <div class="intro-container">
+          <div class="intro-image">
+            <img src="img/tobias-portrait.jpg" alt="">
+          </div>
+          <div class="intro-text">
+            <h1>Hi, I'm Tobias</h1>
+            <p>Welcome, to my portfolio. I'm currently studying multimedia design, aspiring to become a frontend developer.</p>
+    
+            <div class="intro-buttons">
+              <button class="btn primary-btn">Download CV</button>
+              <a class="btn secondary-btn" href="mailto:e.tagmos@gmail.com">Contact me</a>
+            </div>
         </div>
-        <div class="projekt-blok" onclick="openProject('project2')">
-            <h2>Projekt: My Multimedia</h2>
-            <p>Beskrivelse af projekt 2</p>
+      </section>
+
+      <section class="exp-section">
+        <div class="exp-container">
+            <h2>Experience</h2>
+            
+            <div class="exp-frontend-con">
+                <h3>
+                    Frontend development
+                </h3>
+                <div class="code-language">
+
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-sass"></i>
+                </div>
+            </div>
+
+            <div class="learning-con">
+                <h3>Currently learning</h3>
+                <div class="in-progress">
+                    <i class="fa-brands fa-react"></i>
+                    <p>Next.js</p>
+                </div>
+            </div>
         </div>
-        <div class="projekt-blok" onclick="openProject('project3')">
-            <h2>Projekt: Road to CEO</h2>
-            <p>Beskrivelse af projekt 3</p>
-        </div>
-    </section>
+      </section>
+</main>
+
+  
 
     
 </body>

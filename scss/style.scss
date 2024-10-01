@@ -1,61 +1,176 @@
+$primary-color: #4B0082;
+$secondary-color: #7d57c9;
+$bg-dark: #e0e0e0;
+$text-light: #1c1c1c;
+$btn-text: #e0e0e0;
 
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #121212; 
-    color: #ffffff; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $bg-dark;
+    min-height: 100vh;
+    color: $text-light;
+    height: 2000px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
-    text-align: center;
-    padding: 50px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.intro {
-    max-width: 600px;
-    margin: 0 auto;
-}
 
-.profilbillede {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 5px solid #5a189a; 
-}
 
-h1 {
-    font-size: 2.5rem;
-    color: #ffffff; 
-}
+/* desktop nav */
 
-.projekter {
+nav {
     display: flex;
     justify-content: space-around;
-    padding: 50px 20px;
-    gap: 20px;
+    align-items: center;
+    padding: 1em 2em;
+    color: $text-light;
+    top: 0;
+    z-index: 1;
+
+    .logo {
+        h1 {
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 2em;
+            
+
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2em;
+
+        li {
+            position: relative;
+            a {
+              color: $text-light;
+              font-weight: bold;
+              text-decoration: none;
+              font-size: 1.2rem;
+              padding-bottom: 5px;
+              transition: color 0.3s ease;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 0;
+                    height: 3px;
+                    background-color: $primary-color;
+                    box-shadow: 0 2px 6px $primary-color;
+                    transition: width 0.3s ease;
+                  }
+        
+                  &:hover {
+                    &::after {
+                      width: 100%;
+                      box-shadow: 0 2px 6px $primary-color;
+                    }
+                  }
+
+
+            }
+        }
+    }
 }
 
-.projekt-blok {
-    background-color: #5a189a; 
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    color: #ffffff; 
-}
+/* Section */
 
-.projekt-blok:hover {
-    background-color: #9d4edd; 
-}
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    min-height: fit-content;
+  }
 
-h2 {
-    color: #f5f3ff; 
-}
+.intro-section {
+    padding: 2rem;
+    color: $text-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  
+    .intro-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+  
+      .intro-image {
+        margin-bottom: 1.5em;
+  
+        img {
+          max-width: 25em;
+          border-radius: 50%;
+        }
+      }
+  
+      .intro-text {
+        padding: 2em;
 
-p {
-    color: #e0def4; 
-}
+        h1 {
+          color: $primary-color;
+          margin-bottom: .5em;
+          font-size: 2.5em;
+        }
+  
+        p {
+          font-size: 1.2em;
+          margin-bottom: 1.5em;
+          line-height: 1.5em;
+        }
+  
+        .intro-buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+  
+          .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+  
+            &.primary-btn {
+              background-color: $primary-color;
+              color: $btn-text;
+            }
+  
+            &.secondary-btn {
+              background-color: $secondary-color;
+              color: $btn-text;
+              text-decoration: none;
+            }
+  
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+    }
+  }
