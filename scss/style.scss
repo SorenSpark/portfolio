@@ -2,7 +2,7 @@
 
 $primary-color: #4B0082;
 $secondary-color: #7d57c9;
-$bg-dark: #e0e0e0;
+$bg-dark: #f9f9f9;
 $text-light: #1c1c1c;
 $btn-text: #e0e0e0;
 
@@ -218,7 +218,8 @@ section {
                     cursor: pointer;
                     border-radius: 25px;
                     text-align: center; 
-                    max-width: 150px; 
+                    max-width: 150px;
+                    
                     
 
                     @media (max-width: 480px) {
