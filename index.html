@@ -8,55 +8,69 @@
     <script src="https://kit.fontawesome.com/e9eeb44cb1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Portfolio Website</title>
+    <link rel="icon" href="img/tobias-portrait.jpg" type="image/png">
 </head>
 <body>
-<header>
-    <nav id="desktop-nav">
-        <div class="logo">
-            <h1>Tobias E. T.</h1>
-        </div>
-        <div>
-          <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-</header>
-
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">
+                <h1>Tobias Elgaard Tagmos</h1>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="#intro-section">Contact</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>Tobias Elgaard Tagmos</h1>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#intro-section" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 <main>
-    <section class="intro-section">
+    <section class="intro-section" id="intro-section">
         <div class="intro-container">
           <div class="intro-image">
             <img src="img/tobias-portrait.jpg" alt="">
           </div>
           <div class="intro-text">
             <h1>Hi, I'm Tobias</h1>
-            <p>Welcome, to my portfolio. I'm currently studying multimedia design, aspiring to become a frontend webdeveloper.</p>
+            <p>Welcome to my portfolio. I'm currently studying multimedia design, aspiring to become a frontend webdeveloper.</p>
     
             <div class="intro-buttons">
-              <button class="btn primary-btn">Download CV</button>
+              <a class="btn primary-btn" href="assets/cv.pdf" download="Tobias_ET_CV">Download CV</a>
               <a class="btn secondary-btn" href="mailto:e.tagmos@gmail.com">Contact me</a>
             </div>
         </div>
       </section>
 
-      <section class="exp-section">
+      <section class="exp-section" id="experience">
         <div class="exp-text">
             <h2>Experience &
                  progression
             </h2>
-        <p>explore some of the technologies I have experience with and those I'm currently learning</p>
+        <p>Explore some of the technologies and tools that I have experience with and those I'm currently learning.</p>
         </div>
         <div class="exp-container">            
             <div class="exp-frontend-con">
@@ -69,6 +83,26 @@
                     <i class="fa-brands fa-css3-alt"><p>CSS</p></i>
                     <i class="fa-brands fa-js"><p>JavaScript</p></i>
                     <i class="fa-brands fa-sass"><p>Sass</p></i>
+                </div>
+            </div>
+            <div class="exp-design-con">
+                <h3>
+                    Design & Animation
+                </h3>
+                <div class="design-tools">
+                    <div class="aftereffects-icon">
+                        <img  src="img/aftereffects-icon.png" alt="">
+                        <p>After Effects</p>
+                    </div>
+                    <div class="photoshop-icon">
+                        <img  src="img/photoshop-icon.png" alt="">
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="illustrator-icon">
+                        <img  src="img/illustrator-icon.png" alt="">
+                        <p>Illustrator</p>
+                    </div>
+                    <i class="fa-brands fa-figma"><p>Figma</p></i>
                 </div>
             </div>
 
@@ -88,42 +122,77 @@
             </div>
         </div>
       </section>
-      <section class="project-showcase">
-        <div class="project-text">
-            <h1>Projects</h1>
-        <p>Here is a list of some of the projects I have worked on throughout my studies.</p>
-        </div>
-        <div class="project-con">
-            <div class="project-card">
-            <img src="img/ww-project.png" alt="Project 2: boardgame solution with online card pull. ">
-            <div class="project-info">
-                <h2>Boardgame project</h2>
-                <p>A short description of Project 2. Briefly explain what the project is about.</p>
+
+      <section class="about-me" id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="img/firefly-project2.jpg" alt="Tobias Elgaard Tagmos">
             </div>
+            <div class="about-text">
+              <p>I'm a passionate web developer with a keen interest in creating user-friendly and visually appealing websites. I have a strong foundation in HTML, SCSS, and JavaScript, and I bring a unique perspective to every project I undertake.</p>
+              <p>My journey in web development started last year, when I started on my education, multimedia design. Since then, I've been constantly learning and improving my skills to stay up-to-date with the latest technologies and best practices in the field.</p>
+              <h3>My Soft Skills</h3>
+              <ul class="skills-list">
+                <li>Strong Communicator</li>
+                <li>Problem Solver</li>
+                <li>Adaptability</li>
+                <li>Disciplin</li>
+                <li>Quick Learner</li>
+                <li>Team Player</li>
+              </ul>
             </div>
-            <div class="project-card">
-            <img src="img/ec-projekt.png" alt="Project 3">
-            <div class="project-info">
-                <h2>Web availability project</h2>
-                <p>A short description of Project 3. Briefly explain what the project is about.</p>
-            </div>
-            </div>
-            <div class="project-card">
-                <img src="img/moonlight-projekt.png" alt="Project 1: Moonlight, showcasing a group project website, with a hero video and the about us section.">
-                <div class="project-info">
-                    <h2>Moonlight project</h2>
-                    <p>A short description of Project 1. Briefly explain what the project is about.</p>
-                </div>
-                </div>
+          </div>
         </div>
       </section>
+
+      <section class="project-showcase" id="projects">
+        <div class="project-text">
+          <h1>Projects</h1>
+          <p>Here is a list of some of the projects I have worked on throughout my studies.</p>
+        </div>
+        <div class="project-con">
+          <div class="project-card" data-project="boardgame">
+            <img src="img/ww-project.png" alt="Project 2: boardgame solution with online card pull. ">
+            <div class="project-info">
+              <h2>Boardgame project</h2>
+              <p>A Team project, where the goal was to create a boardgame for the new students. Here we implemented an online card pull system.</p>
+            </div>
+          </div>
+          <div class="project-card" data-project="web-availability">
+            <img src="img/ec-projekt.png" alt="Project 3">
+            <div class="project-info">
+              <h2>Web availability project</h2>
+              <p>My first individual project in the start of my carreer, about web-availability and how to implement it in webdevelopment.</p>
+            </div>
+          </div>
+          <div class="project-card" data-project="moonlight">
+            <img src="img/moonlight-projekt.png" alt="Project 1: Moonlight, showcasing a group project website, with a hero video and the about us section.">
+            <div class="project-info">
+              <h2>Moonlight project</h2>
+              <p>A team project, where the goal was to create a media bureau and to brand ourselves.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="popup-overlay">
+        <div class="popup-content">
+          <span class="close-popup">&times;</span>
+          <h2 id="popup-title"></h2>
+          <img id="popup-image" src="" alt="">
+          <p id="popup-description"></p>
+          <div id="popup-extra-content"></div>
+        </div>
+      </div>
       
 </main>
 
 <footer>
     <div class="social-icons">
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-github"></i>
+        <a href="https://www.linkedin.com/in/tobias-elgaard-tagmos-b5a315177/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/SorenSpark"><i class="fa-brands fa-github"></i></a>
     </div>
     <div class="footer-container">
         <p>Copyright © Tobias E. T. 2024</p>
