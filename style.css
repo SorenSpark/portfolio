@@ -57,14 +57,6 @@ header {
   display: flex;
   gap: 2em;
 }
-#desktop-nav .nav-links .social-icons i {
-  font-size: 2rem;
-  margin: 0 0.5rem;
-  color: #4B0082;
-}
-#desktop-nav .nav-links .social-icons i:hover {
-  color: #7d57c9;
-}
 #desktop-nav .nav-links ul {
   display: flex;
   list-style: none;
@@ -186,7 +178,7 @@ header {
 
 /* main */
 section {
-  min-height: 75vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,7 +423,7 @@ section {
 }
 @media (max-width: 480px) {
   .exp-section .exp-container .exp-frontend-con .code-language i {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
 .exp-section .exp-container .exp-frontend-con .code-language i p {
@@ -483,7 +475,7 @@ section {
 }
 @media (max-width: 480px) {
   .exp-section .exp-container .exp-design-con .design-tools {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
 .exp-section .exp-container .exp-design-con .design-tools p, .exp-section .exp-container .exp-design-con .design-tools div > p {
@@ -532,7 +524,7 @@ section {
 }
 @media (max-width: 480px) {
   .exp-section .exp-container .learning-con .in-progress i {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
 .exp-section .exp-container .learning-con .in-progress p {

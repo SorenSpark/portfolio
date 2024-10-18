@@ -65,6 +65,18 @@ header {
         display: flex;
         gap: 2em;
 
+        .social-icons {
+            i {
+                font-size: 2rem;
+                margin: 0 0.5rem;
+                color: $primary-color;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+
 
         ul {
             display: flex;
@@ -211,7 +223,7 @@ header {
 /* main */
 
 section {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -447,7 +459,7 @@ section {
                     text-shadow: 0 0 6px $text-light;
 
                     @media (max-width: 480px) {
-                        font-size: 1.5rem;
+                        font-size: 3rem;
                     }
 
                     p {
@@ -490,7 +502,7 @@ section {
                 }
 
                     @media (max-width: 480px) {
-                        font-size: 1.5rem;
+                        font-size: 3rem;
                     }
 
                     p, div>p {
@@ -532,7 +544,7 @@ section {
                     text-shadow: 0 0 6px $text-light;
 
                     @media (max-width: 480px) {
-                        font-size: 1.5rem;
+                        font-size: 3rem;
                     }
                 }
 
