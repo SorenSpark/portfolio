@@ -31,7 +31,7 @@ header {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
-    @media (max-width: 768px) {
+    @media (max-width: 1070px) {
         position: sticky;
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 50%, $secondary-color 100%);
         backdrop-filter: none;
@@ -48,7 +48,7 @@ header {
     padding: 1em 2em;
     color: $text-light;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1070px) {
         display: none;
     }
 
@@ -121,9 +121,21 @@ header {
 #hamburger-nav {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1070px) {
         display: block;
         width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        gap: 1rem;
+        i {
+            font-size: 2rem;
+            color: $primary-color;
+        }
     }
 
     .nav-content {
@@ -180,7 +192,7 @@ header {
 }
 
 .menu-links {
-    background-color: rgba($bg-dark, 0.9);
+    background-color: rgba($bg-dark, 1);
     backdrop-filter: blur(10px);
     max-height: 0;
     overflow: hidden;

@@ -140,13 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    function playVideos() {
-        document.querySelectorAll('.popup-content video').forEach(video => {
-          video.play().catch(error => {
-            console.log("Autoplay was prevented. Please unmute and play manually.");
-          });
-        });
-      }
+
 
       projectCards.forEach(card => {
         card.addEventListener('click', () => {

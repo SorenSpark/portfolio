@@ -25,7 +25,7 @@ header {
           backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 768px) {
+@media (max-width: 1070px) {
   header {
     position: sticky;
     background: linear-gradient(135deg, #7d57c9 0%, #4B0082 50%, #7d57c9 100%);
@@ -42,7 +42,7 @@ header {
   padding: 1em 2em;
   color: #1c1c1c;
 }
-@media (max-width: 768px) {
+@media (max-width: 1070px) {
   #desktop-nav {
     display: none;
   }
@@ -101,11 +101,22 @@ header {
 #hamburger-nav {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1070px) {
   #hamburger-nav {
     display: block;
     width: 100%;
   }
+}
+#hamburger-nav .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+#hamburger-nav .social-icons i {
+  font-size: 2rem;
+  color: #4B0082;
 }
 #hamburger-nav .nav-content {
   display: flex;
@@ -149,7 +160,7 @@ header {
 }
 
 .menu-links {
-  background-color: rgba(249, 249, 249, 0.9);
+  background-color: #f9f9f9;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   max-height: 0;
